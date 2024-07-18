@@ -24,10 +24,7 @@
                     <i class="fas fa-times" onclick="closemenu()"></i> 
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i> 
-                <div class="nav-user-icon " onclick="settingsMenuToggle()">
-                    
-                    <img src="skprofile.jpg" alt="">
-                </div>
+                
 
                 
             </nav>
@@ -37,7 +34,7 @@
                 <h1>Hi, I'm <span>Sakshi</span>  Kale <br></h1> <br>
                 <p>Web Developer</p>
                 <!-- <p>This is my official portfolio website to showcase my all works.</p> -->
-                <a href="images/Sakshi's resume (1).pdf" download class="btn btn2">Download CV</a>
+                <a href="images/sakshik.resume.pdf" download class="btn btn2">Download CV</a>
 
             </div>
         </div>
@@ -46,9 +43,7 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <!-- <div class="col1">
-                    <img src="me.jpg" alt="">
-                </div> -->
+                
                 <div class="col2">
                     <h1 class="sub-title" id="ab">About Me</h1> <br>
                     <p>I love designing websites. My key strengths are visual & interactive design, and also possess coding skills.
@@ -56,8 +51,8 @@
                   
                     </p> <br> <br>
                     <div class="tab-titles">
-                        <p class="tab-links active-link onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')" id="exp">Experience</p>
                         <p class="tab-links active-link" id="e" onclick="opentab('education')">Education</p>
                     </div>
                     
@@ -188,9 +183,9 @@
 
 
 
-    <script>
+    <!-- <script>
         var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
 
         // function opentab(tabname){
         //     for(tablink of tablinks){
@@ -202,17 +197,18 @@
         //      event.currentTarget.classList.add("active-link");
         //      document.getElementById(tabname).classList.add("active-tab");
         // }
-    </script>
+
+    </script>-->
     <script>
 
         var sidemenu = document.getElementById("sidemenu");
 
         function openmenu(){
-            sidemenu.style.right="0";
+            sidemenu.style.right="840px";
         }
 
         function closemenu(){
-            sidemenu.style.right="-200px";
+            sidemenu.style.right="-130px";
         }
 
         const msg = document.getElementById("msg");
